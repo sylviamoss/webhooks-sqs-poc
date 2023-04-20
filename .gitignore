@@ -2,3 +2,4 @@ main.zip
 *.tfstate
 *.tfstate.backup
 .terraform/
+main

@@ -14,6 +14,9 @@ func handlePost(w http.ResponseWriter, req *http.Request) {
 	_, _ = io.Copy(buf, req.Body)
 	fmt.Println("=== Message Received ===")
 	fmt.Println(buf.String())
+
+	fmt.Println("->> Returning bad request")
+	w.WriteHeader(http.StatusBadRequest)
 }
 
 func main() {

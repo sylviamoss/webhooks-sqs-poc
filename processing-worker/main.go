@@ -36,7 +36,7 @@ func Handle(message *sqs.Message) error {
 	}))
 
 	payload, err := json.Marshal(Request{
-		Destination: "https://e082fc03993a.ngrok.app",
+		Destination: "https://e8808211e8f3.ngrok.app",
 		Payload:     *message.Body,
 	})
 	if err != nil {
